@@ -61,8 +61,8 @@
 }
 
 header {
-    background-image: url('./assets/main.png');
-    background-position: center center;
+    background-image: url('./assets/main.jpeg');
+    background-position: 50% 25%;
     background-size: cover;
     background-repeat: no-repeat;
     height: 975px;
@@ -340,19 +340,95 @@ p.normal {
     background-color: transparent;
 }
 
-.black {
-    color: #000000 !important;
-}
-
 button.reseted {
     padding: 0;
+    color: #000000 !important;
 }
 button.underlined {
     text-decoration: underline;
 }
 
-@media (min-width: 1200px) {
-    .h1, h1  {
-        font-size: 5rem;
+@media (max-width: 392px) {
+    header {
+        height: 850px;
+        background-position: 70% 0%;
+        background-size: 170%;
+    }
+
+    .h1, h1 {
+        font-size: 64px;
+        line-height: 55px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .about, .contacts {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .custom-item {
+        order: -1;
+    }
+
+    .black {
+        color: #000000 !important;
+        font-weight: 450 !important;
+    }
+
+    .catchphrase {
+        padding: 0;
+    }
+
+    .atricle h3, .h3 {
+        color: #F2F2F2;
+        font-size: 56px;
+        padding: 20px 15px;
+    }
+
+    .nav-item.social {
+        width: auto;
+        column-gap: 35px;
+    }
+
+    .nav-link {
+        padding: 0;
+    }
+
+    .nav.social {
+        flex-direction: row;
+        padding-top: 0;
+        justify-content: space-between;
+    }
+
+    header > .nav:first-of-type {
+        flex-grow: 1;
+        padding-bottom: 0;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: start;
+        row-gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-link.expand-link {
+        margin-top: 21rem;
+    }
+
+    footer .nav {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .nav-item.about-order {
+        order: 4;
+    }
+
+    .nav-item.services-order {
+        order: 5;
     }
 }
