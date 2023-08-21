@@ -361,7 +361,27 @@ button.underlined {
         height: 850px;
         background-position: 70% 0%;
         background-size: 170%;
+        position: relative;
+        justify-content: end;
+        padding-bottom: 40px;
     }
+
+
+    header h1.h1.uppercase {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    header h3.h3 {
+        position: absolute;
+        top: 4.5rem;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 36px;
+    }
+
 
     .h1, h1 {
         font-size: 64px;
@@ -395,41 +415,28 @@ button.underlined {
     }
 
     .nav-item.social {
-        width: auto;
-        column-gap: 35px;
+        flex-direction: column;
+        row-gap: 30px;
     }
 
     .nav-link {
         padding: 0;
     }
 
-    .nav.social {
-        flex-direction: row;
-        padding-top: 0;
-        justify-content: space-between;
-    }
-
-    header > .nav:first-of-type {
-        flex-grow: 1;
-        padding-bottom: 0;
-    }
-
-    .nav {
+    .nav, .nav.social {
         flex-direction: column;
         justify-content: start;
-        row-gap: 10px;
+        row-gap: 30px;
         align-items: center;
         text-align: center;
-    }
-
-    .nav-link.expand-link {
-        margin-top: 21rem;
+        padding: 0;
     }
 
     footer .nav {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-evenly;
+        padding: 15px;
     }
 
     .nav-item.about-order {
