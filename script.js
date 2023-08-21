@@ -3,7 +3,7 @@ const notificationContainer = document.getElementById('notificationContainer');
 
 copyButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-        btn.setAttribute('disabled", "disabled');
+        btn.setAttribute('disabled', 'disabled');
         const email = 'stylist.marie.m@gmail.com';
 
         const tempInput = document.createElement('input');
