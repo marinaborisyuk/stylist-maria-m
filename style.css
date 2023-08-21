@@ -348,7 +348,15 @@ button.underlined {
     text-decoration: underline;
 }
 
-@media (max-width: 392px) {
+.desc {
+    display: block;
+}
+
+.mob {
+    display: none;
+}
+
+@media (min-width: 350px) and (max-width: 770px) {
     header {
         height: 850px;
         background-position: 70% 0%;
@@ -430,5 +438,139 @@ button.underlined {
 
     .nav-item.services-order {
         order: 5;
+    }
+
+    .half-page-bg {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 410px;
+        width: 100%;
+        border: 1.5px solid #000000;
+        border-right: none;
+        border-left: none;
+    }
+
+    .about .article, .contacts .article {
+        width: 100%;
+        padding: 2rem 0.8rem;
+        text-align: center;
+        border-right: none;
+        border-left: none;
+    }
+
+    .h2, h2 {
+        font-size: 64.2px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 55px;
+    }
+
+    .about .h4, h4 {
+        margin-top: 20px;
+        line-height: 40px;
+        font-weight: 400;
+    }
+
+    .h5, h5 {
+        font-weight: 400;
+    }
+
+    .contacts-img {
+        order: -1;
+    }
+
+    .contacts .article {
+        row-gap: 100px;
+        align-items: center;
+    }
+
+    .contacts .article .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-5 {
+        padding: 2rem 1rem !important;
+    }
+
+    .services .h4, h4 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 36px;
+    }
+
+    .accordion-flush .accordion-item .accordion-button {
+        border-top: 2px solid #000000;
+    }
+
+    .accordion-button::after {
+        width: 46px;
+        height: 46px;
+        background-size: 100%;
+    }
+
+    .services .accordion {
+        border-bottom: 2px solid #000000;
+    }
+
+    .additional {
+        display: none;
+    }
+
+    .desc {
+        display: none !important;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .accordion-body {
+        padding: 1rem;
+    }
+
+    .full-container-bg {
+        height: 250px;
+    }
+
+    .list-numbered .list-item,
+    .list-item_content,
+    p.normal {
+        font-size: 20px;
+        font-weight: 450;
+        line-height: 100%;
+        letter-spacing: 0.2px;
+    }
+
+    .list-circle {
+        padding-left: 1.5rem;
+    }
+
+    .list-numbered .list-item u {
+        font-weight: 400;
+        letter-spacing: 0.2px;
+    }
+
+    .list-item_content p {
+        line-height: 100%;
+        margin: 1rem 0;
+        letter-spacing: 0.2px;
+        font-weight: 450;
+    }
+
+    .contacts a, button.mob {
+        font-family: 'Playfair Display', serif;
+        font-size: 56px;
+        text-decoration: none;
+        letter-spacing: 0px;
+        text-transform: capitalize !important;
+        line-height: 110%;
+        font-weight: 550 !important;
+    }
+
+    .break {
+        display: block;
     }
 }
