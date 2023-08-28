@@ -366,7 +366,6 @@ button.underlined {
         padding-bottom: 40px;
     }
 
-
     header h1.h1.uppercase {
         position: absolute;
         top: 0;
@@ -381,7 +380,6 @@ button.underlined {
         transform: translateX(-50%);
         font-size: 36px;
     }
-
 
     .h1, h1 {
         font-size: 64px;
